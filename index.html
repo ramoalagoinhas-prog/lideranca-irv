@@ -13,14 +13,9 @@
     <meta name="apple-mobile-web-app-title" content="Liderança IRV">
     <link rel="apple-touch-icon" href="./icon-192.png">
 
-    <!-- Definição de Variáveis de Ambiente para o Navegador (GitHub Pages) -->
+    <!-- Script de Ambiente Limpo -->
     <script>
-      window.process = {
-        env: {
-          // IMPORTANTE: Cole sua API Key do Google Gemini (AI Studio) abaixo.
-          API_KEY: "AIzaSyBNlyMfbdS-7LKHKCuVZWXJItvGBKvd95g"
-        }
-      };
+      window.process = { env: {} };
     </script>
 
     <!-- Usando Tailwind via CDN para simplificar o build sem precisar de PostCSS local complexo -->
@@ -33,7 +28,6 @@
         body { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
     </style>
 
-<link rel="stylesheet" href="/index.css">
 <script type="importmap">
 {
   "imports": {
